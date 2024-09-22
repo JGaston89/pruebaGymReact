@@ -1,0 +1,53 @@
+.social-container {
+    padding: 20px; 
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    
+  }
+  
+.tituloFooter{
+    display: flex;
+    color: #ff0058;
+    text-align: center;
+}
+
+
+
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: flex;
+    width: 30px;
+    height: 35px;
+
+  }
+  
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  
+  a.linkedin{
+    background: linear-gradient(315deg,#ffbc00,#ff0058);
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  
+  a.instagram {
+    background: linear-gradient(315deg,#ffbc00,#ff0058);
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+
+a.youtube{
+    background: linear-gradient(315deg,#ffbc00,#ff0058);
+    align-items: center;
+    justify-content: center;
+
+}
+
+  

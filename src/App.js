@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Title from './Components/Title/Title';
+import CardTrainer from './Components/CardTrainer/CardTrainer';
+import CardTrainer2 from './Components/CardTrainer/CarTrainer2';
+import Galeria from './Components/Galeria/Galeria';
+import CardTrainerPRQ from './Components/CardTrainer/CardTrainerPRQ';
+import Promos from './Components/Promos/Promos.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Title/>
+      <div className="App">
+        <div className='espaciadorTarjetas'> 
+          <CardTrainer/>
+          <CardTrainerPRQ/>
+          <CardTrainer2/>
+        </div>
+        <div>
+          <div className='espaciadorGaleriaYPromos'>
+            <Galeria className='galeria'/>
+            <Promos/>
+          </div>
+        </div>
+          <div className='footer'>
+            <Footer/>
+          </div>
+      </div>
     </div>
+    
+
   );
 }
 
